@@ -102,7 +102,11 @@ CameraActivity extends AppCompatActivity {
             fileToUpLoad=data.getData();
 //                decodeUri(fileTopUpLoad);
         }
-        Picasso.with(this).load(fileToUpLoad).resize(imageView.getWidth(),imageView.getHeight()).centerInside();
+        Picasso.with(this)
+                .load(fileToUpLoad)
+                .resize(imageView.getWidth(),imageView.getHeight())
+                .centerInside()
+                .into(imageView);
 
     }
     public void upload(View v){
