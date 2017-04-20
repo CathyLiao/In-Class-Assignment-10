@@ -47,7 +47,7 @@ public class ListActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(posts);
+        mAdapter = new MyAdapter(posts,this);
         mRecyclerView.setAdapter(mAdapter);
 
         postsRef.addChildEventListener(new ChildEventListener() {

@@ -35,7 +35,6 @@
             android:name=".ListActivity"
             android:label="Read BlogPosts"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".StorageActivity"
             android:label=".Load Images"
@@ -48,9 +47,11 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
 
+        <activity android:name=".DetailActivity"
+            android:label="@string/detail_name"></activity>
     </application>
 
 </manifest>

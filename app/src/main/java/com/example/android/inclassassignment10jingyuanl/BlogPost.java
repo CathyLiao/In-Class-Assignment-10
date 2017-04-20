@@ -1,12 +1,13 @@
 package com.example.android.inclassassignment10jingyuanl;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 /**
  * Created by Cathy on 4/5/17.
  */
 
-public class BlogPost {
+public class BlogPost implements Serializable {
     String title;
     String body;
     String time;
